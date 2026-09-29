@@ -1,4 +1,4 @@
-// File: F:\Tanu-Next\wed-invite\app\page.tsx
+// File: E:\Next js\wed-invite\invite-sample\app\page.tsx
 import * as entry from '../../../app/page.js'
 import type { ResolvingMetadata, ResolvingViewport } from 'next/dist/lib/metadata/types/metadata-interface.js'
 
