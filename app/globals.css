@@ -1,0 +1,91 @@
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400;1,600&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: 'Candlescript';
+  src: url('/fonts/Candlescript.otf') format('opentype');
+  font-weight: 400;
+  font-style: normal;
+  font-display: block;
+}
+
+:root {
+  --background: 30 30% 97%;
+  --foreground: 350 60% 15%;
+  --card: 0 0% 100%;
+  --card-foreground: 350 60% 15%;
+  --popover: 0 0% 100%;
+  --popover-foreground: 350 60% 15%;
+  --primary: 350 75% 32%;
+  --primary-foreground: 0 0% 100%;
+  --secondary: 350 40% 94%;
+  --secondary-foreground: 350 55% 22%;
+  --muted: 350 30% 92%;
+  --muted-foreground: 350 20% 38%;
+  --accent: 350 60% 55%;
+  --accent-foreground: 0 0% 100%;
+  --destructive: 0 70% 50%;
+  --destructive-foreground: 0 0% 100%;
+  --border: 350 50% 85%;
+  --input: 350 50% 85%;
+  --ring: 350 75% 32%;
+  --radius: 0.75rem;
+
+  --sage: 350 50% 90%;
+  --sage-deep: 350 65% 35%;
+  --sage-soft: 350 60% 96%;
+  --cream: 30 30% 97%;
+  --gold: 30 60% 48%;
+  --gold-soft: 30 50% 82%;
+  --rose: 350 70% 42%;
+  --rose-deep: 350 70% 28%;
+  --ink: 350 60% 15%;
+
+  --gradient-sage: linear-gradient(135deg, hsl(350 50% 94%), hsl(350 45% 88%));
+  --gradient-cream: linear-gradient(180deg, hsl(30 30% 98%), hsl(350 40% 96%));
+  --gradient-gold: linear-gradient(135deg, hsl(30 60% 55%), hsl(30 55% 40%));
+  --gradient-rose: linear-gradient(135deg, hsl(350 70% 48%), hsl(350 70% 32%));
+
+  --shadow-elegant: 0 20px 60px -20px hsl(350 55% 30% / 0.25);
+  --shadow-soft: 0 8px 30px -10px hsl(350 40% 25% / 0.14);
+  --shadow-gold: 0 10px 40px -10px hsl(30 55% 45% / 0.3);
+  --transition-elegant: cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+body {
+  color: hsl(var(--foreground));
+  background: hsl(var(--background));
+  font-family: 'Cormorant Garamond', serif;
+  overflow-x: hidden;
+}
+
+.bg-cream {
+  background-color: hsl(var(--cream));
+  background-image: url('/bg-texture.png');
+  background-repeat: repeat;
+  background-size: 600px auto;
+}
+
+.gradient-gold {
+  background: var(--gradient-gold);
+}
+
+.font-script {
+  font-family: 'Candlescript', cursive;
+}
+
+.font-serif-display {
+  font-family: 'Cormorant Garamond', serif;
+}
+
+.font-cinzel {
+  font-family: 'Cinzel', serif;
+  letter-spacing: 0.15em;
+}
+
+.font-emoji {
+  font-family: "Noto Color Emoji", sans-serif;
+}
